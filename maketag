@@ -1,0 +1,233 @@
+
+#!/bin/sh
+#item   ####description                                      ###on off ###
+TMP=/var/log/setup/tmp
+if [ ! -d $TMP ]; then
+  mkdir -p $TMP
+fi
+cat /dev/null > $TMP/SeTnewtag
+dialog --title "SELECTING PACKAGES FROM SERIES D (PROGRAM DEVELOPMENT)" \
+       --checklist "Please confirm the packages you wish to install \
+from series D. Use the UP/DOWN keys to scroll through the list, and \
+the SPACE key to deselect any items you don't want to install. \
+Press ENTER when you are \
+done." 22 72 12 \
+"acpica" "ACPI Source Language [ASL] Utils" "on" \
+"amtk" "Actions, Menus and Toolbars Kit" "on" \
+"appstream-glib" "library for reading and writing AppStream metadata" "on" \
+"avahi" "service discovery aka zeroconf" "on" \
+"baobab" "Gnome Disk Usage Analyzer" "on" \
+"bash-completion" "programmable completion for the bash shell" "on" \
+"blocaled" "locale settings D-Bus service" "on" \
+"brasero" "CD/DVD burning application" "on" \
+"bubblewrap" "unprivileged sandboxing tool" "on" \
+"cantarell-fonts" "Cantarell typeface family" "on" \
+"cheese" "" "on" \
+"chrome-gnome-shell" "" "on" \
+"click" "" "on" \
+"clutter" "" "on" \
+"clutter-gst" "" "on" \
+"flex" "Fast lexical analyzer generator" "on" \
+"clutter-gtk" "" "on" \
+"cmark" "" "on" \
+"cogl" "" "on" \
+"colord" "" "on" \
+"colord-gtk" "" "on" \
+"devhelp" "" "on" \
+"device-tree-compiler" "" "on" \
+"eog" "" "on" \
+"epiphany" "" "on" \
+"evince" "" "on" \
+"evolution" "" "on" \
+"evolution-data-server" "" "on" \
+"exempi" "implementation of XMP" "on" \
+"ffnvcodec-headers" "" "on" \
+"file-roller" "" "on" \
+"five-or-more" "" "on" \
+"flatpak" "" "on" \
+"flatpak-builder" "sandboxing desktop application building tool" "on" \
+"folks" "" "on" \
+"gdm" "" "on" \
+"gdm-settings" "" "on" \
+"geoclue2" "" "on" \
+"geocode-glib" "" "on" \
+"gfbgraph" "" "on" \
+"gi-docgen" "" "on" \
+"gitg" "" "on" \
+"gjs" "javascript bindings for GNOME" "on" \
+"glusterfs" "" "on" \
+"gnome-applets" "" "on" \
+"gnome-autoar" "" "on" \
+"gnome-backgrounds" "" "on" \
+"gnome-bluetooth" "" "on" \
+"gnome-boxes" "" "on" \
+"gnome-builder" "" "on" \
+"gnome-calculator" "" "on" \
+"gnome-calendar" "" "on" \
+"gnome-characters" "" "on" \
+"gnome-clocks" "" "on" \
+"gnome-color-manager" "" "on" \
+"gnome-common" "" "on" \
+"gnome-console" "" "on" \
+"gnome-control-center" "" "on" \
+"gnome-desktop" "" "on" \
+"gnome-dictionary-master" "words inonline dictionaries" "on" \
+"gnome-disk-utility" "" "on" \
+"gnome-font-viewer" "" "on" \
+"gnome-games" "" "on" \
+"gnome-initial-setup" "" "on" \
+"gnome-keyring" "handle security credentials" "on" \
+"gnome-maps" "" "on" \
+"gnome-menus" "" "on" \
+"gnome-mines" "" "on" \
+"gnome-music" "" "on" \
+"gnome-nettool" "" "on" \
+"gnome-online-accounts" "" "on" \
+"gnome-panel" "" "on" \
+"gnome-photos" "" "on" \
+"gnome-power-manager" "" "on" \
+"gnome-remote-desktop" "" "on" \
+"gnome-session" "" "on" \
+"gnome-settings-daemon" "" "on" \
+"gnome-shell" "" "on" \
+"gnome-shell-extensions" "" "on" \
+"gnome-sudoku" "" "on" \
+"gnome-system-monitor" "" "on" \
+"gnome-text-editor" "" "on" \
+"gnome-tweaks" "" "on" \
+"gnome-user-docs" "" "on" \
+"gnome-video-effects" "a collection of GStreamer effects" "on" \
+"gnome-weather" "" "on" \
+"gom" "" "on" \
+"grilo" "" "on" \
+"grilo-plugins" "" "on" \
+"gsettings-desktop-schemas" "" "on" \
+"gsound" "" "on" \
+"gspell" "" "on" \
+"gtk-frdp" "" "on" \
+"gtk-vnc" "" "on" \
+"gtk4" "" "on" \
+"gtksourceview4" "" "on" \
+"gtksourceview5" "" "on" \
+"highlight" "" "on" \
+"jq" "" "on" \
+"jsonrpc-glib" "" "on" \
+"libadwaita" "" "on" \
+"libcacard" "" "on" \
+"libchamplain" "" "on" \
+"libdaemon" "" "on" \
+"libdazzle" "" "on" \
+"libdmapsharing3" "" "on" \
+"libgdata" "" "on" \
+"libgit2" "" "on" \
+"libgit2-glib" "" "on" \
+"libgnome-games-support" "" "on" \
+"libgrss" "" "on" \
+"libgusb" "" "on" \
+"libgweather" "" "on" \
+"libgweather4" "" "on" \
+"libgxps" "" "on" \
+"libhandy" "" "on" \
+"libiptcdata" "" "on" \
+"libiscsi" "" "on" \
+"liblouis" "" "on" \
+"libmanette" "" "on" \
+"libmediaart" "" "on" \
+"libnfs" "" "on" \
+"libnma" "" "on" \
+"liboauth" "" "on" \
+"libosinfo" "" "on" \
+"libovf-glib" "" "on" \
+"libpeas" "" "on" \
+"libportal" "" "on" \
+"libpst" "" "on" \
+"libstemmer" "" "on" \
+"liburcu" "" "on" \
+"libvirt" "" "on" \
+"libvirt-glib" "" "on" \
+"libvirt-python" "" "on" \
+"libwnck4" "" "on" \
+"libwpe" "" "on" \
+"lua" "" "on" \
+"lua52" "" "on" \
+"lua53" "" "on" \
+"luajit" "" "on" \
+"luasocket" "" "on" \
+"lxml" "" "on" \
+"malcontent" "" "on" \
+"mozjs91" "" "on" \
+"mutter" "" "on" \
+"nautilus" "" "on" \
+"nautilus-code" "" "on" \
+"nv-codec-headers" "" "on" \
+"orca" "" "on" \
+"osinfo-db" "" "on" \
+"osinfo-db-tools" "" "on" \
+"ostree" "" "on" \
+"p7zip" "" "on" \
+"pango" "" "on" \
+"pcsc-lite" "" "on" \
+"polkit" "" "on" \
+"power-profiles-daemon" "" "on" \
+"psutil" "" "on" \
+"python-toml" "" "on" \
+"python-wheel" "" "on" \
+"python3-dbusmock" "" "on" \
+"qemu" "" "on" \
+"qqwing" "" "on" \
+"rest" "" "on" \
+"retro-gtk" "" "on" \
+"seahorse" "" "on" \
+"smartypants" "" "on" \
+"snappy" "" "on" \
+"sphinx_rtd_theme" "" "on" \
+"spice" "" "on" \
+"spice-gtk" "" "on" \
+"spice-protocol" "" "on" \
+"sysprof" "" "on" \
+"template-glib" "" "on" \
+"totem-pl-parser" "" "on" \
+"tracker" "" "on" \
+"tracker-miners2" "" "on" \
+"tracker-miners3" "" "on" \
+"tracker2" "" "on" \
+"typogrify" "" "on" \
+"umockdev" "" "on" \
+"upower" "" "on" \
+"usbredir" "" "on" \
+"vde2" "" "on" \
+"vinagre" "" "on" \
+"virglrenderer" "" "on" \
+"webkit2gtk" "" "on" \
+"wpebackend-fdo" "" "on" \
+"xdg-dbus-proxy" "" "on" \
+"xdg-desktop-portal-gnome" "" "on" \
+"xdg-desktop-portal-gtk" "" "on" \
+"yajl" "" "on" \
+"yelp" "" "on" \
+"yelp-tools" "" "on" \
+"yelp-xsl" "" "on" \
+"ytnef" "" "on" \
+"zenity" "display gtk dialog boxes from cli" "on" \
+2> $TMP/SeTpkgs
+if [ $? = 1 -o $? = 255 ]; then
+ rm -f $TMP/SeTpkgs
+ > $TMP/SeTnewtag
+ for pkg in \
+acpica amtk appstream-glib avahi baobab bash-completion blocaled brasero bubblewrap cantarell-fonts cheese chrome-gnome-shell click clutter clutter-gst flex clutter-gtk cmark cogl colord colord-gtk devhelp device-tree-compiler eog epiphany evince evolution evolution-data-server exempi ffnvcodec-headers file-roller five-or-more flatpak flatpak-builder folks gdm gdm-settings geoclue2 geocode-glib gfbgraph gi-docgen gitg gjs glusterfs gnome-applets gnome-autoar gnome-backgrounds gnome-bluetooth gnome-boxes gnome-builder gnome-calculator gnome-calendar gnome-characters gnome-clocks gnome-color-manager gnome-common gnome-console gnome-control-center gnome-desktop gnome-dictionary-master gnome-disk-utility gnome-font-viewer gnome-games gnome-initial-setup gnome-keyring gnome-maps gnome-menus gnome-mines gnome-music gnome-nettool gnome-online-accounts gnome-panel gnome-photos gnome-power-manager gnome-remote-desktop gnome-session gnome-settings-daemon gnome-shell gnome-shell-extensions gnome-sudoku gnome-system-monitor gnome-text-editor gnome-tweaks gnome-user-docs gnome-video-effects gnome-weather gom grilo grilo-plugins gsettings-desktop-schemas gsound gspell gtk-frdp gtk-vnc gtk4 gtksourceview4 gtksourceview5 highlight jq jsonrpc-glib libadwaita libcacard libchamplain libdaemon libdazzle libdmapsharing3 libgdata libgit2 libgit2-glib libgnome-games-support libgrss libgusb libgweather libgweather4 libgxps libhandy libiptcdata libiscsi liblouis libmanette libmediaart libnfs libnma liboauth libosinfo libovf-glib libpeas libportal libpst libstemmer liburcu libvirt libvirt-glib libvirt-python libwnck4 libwpe lua lua52 lua53 luajit luasocket lxml malcontent mozjs91 mutter nautilus nautilus-code nv-codec-headers orca osinfo-db osinfo-db-tools ostree p7zip pango pcsc-lite polkit power-profiles-daemon psutil python-toml python-wheel python3-dbusmock qemu qqwing rest retro-gtk seahorse smartypants snappy sphinx_rtd_theme spice spice-gtk spice-protocol sysprof template-glib totem-pl-parser tracker tracker-miners2 tracker-miners3 tracker2 typogrify umockdev upower usbredir vde2 vinagre virglrenderer webkit2gtk wpebackend-fdo xdg-dbus-proxy xdg-desktop-portal-gnome xdg-desktop-portal-gtk yajl yelp yelp-tools yelp-xsl ytnef zenity \
+  ; do
+  echo "$pkg: SKP" >> $TMP/SeTnewtag
+ done
+ exit
+fi
+cat /dev/null > $TMP/SeTnewtag
+for PACKAGE in \
+acpica amtk appstream-glib avahi baobab bash-completion blocaled brasero bubblewrap cantarell-fonts cheese chrome-gnome-shell click clutter clutter-gst flex clutter-gtk cmark cogl colord colord-gtk devhelp device-tree-compiler eog epiphany evince evolution evolution-data-server exempi ffnvcodec-headers file-roller five-or-more flatpak flatpak-builder folks gdm gdm-settings geoclue2 geocode-glib gfbgraph gi-docgen gitg gjs glusterfs gnome-applets gnome-autoar gnome-backgrounds gnome-bluetooth gnome-boxes gnome-builder gnome-calculator gnome-calendar gnome-characters gnome-clocks gnome-color-manager gnome-common gnome-console gnome-control-center gnome-desktop gnome-dictionary-master gnome-disk-utility gnome-font-viewer gnome-games gnome-initial-setup gnome-keyring gnome-maps gnome-menus gnome-mines gnome-music gnome-nettool gnome-online-accounts gnome-panel gnome-photos gnome-power-manager gnome-remote-desktop gnome-session gnome-settings-daemon gnome-shell gnome-shell-extensions gnome-sudoku gnome-system-monitor gnome-text-editor gnome-tweaks gnome-user-docs gnome-video-effects gnome-weather gom grilo grilo-plugins gsettings-desktop-schemas gsound gspell gtk-frdp gtk-vnc gtk4 gtksourceview4 gtksourceview5 highlight jq jsonrpc-glib libadwaita libcacard libchamplain libdaemon libdazzle libdmapsharing3 libgdata libgit2 libgit2-glib libgnome-games-support libgrss libgusb libgweather libgweather4 libgxps libhandy libiptcdata libiscsi liblouis libmanette libmediaart libnfs libnma liboauth libosinfo libovf-glib libpeas libportal libpst libstemmer liburcu libvirt libvirt-glib libvirt-python libwnck4 libwpe lua lua52 lua53 luajit luasocket lxml malcontent mozjs91 mutter nautilus nautilus-code nv-codec-headers orca osinfo-db osinfo-db-tools ostree p7zip pango pcsc-lite polkit power-profiles-daemon psutil python-toml python-wheel python3-dbusmock qemu qqwing rest retro-gtk seahorse smartypants snappy sphinx_rtd_theme spice spice-gtk spice-protocol sysprof template-glib totem-pl-parser tracker tracker-miners2 tracker-miners3 tracker2 typogrify umockdev upower usbredir vde2 vinagre virglrenderer webkit2gtk wpebackend-fdo xdg-dbus-proxy xdg-desktop-portal-gnome xdg-desktop-portal-gtk yajl yelp yelp-tools yelp-xsl ytnef zenity \
+ ; do
+ if grep "\(^\| \)$PACKAGE\( \|$\)" $TMP/SeTpkgs 1> /dev/null 2> /dev/null ; then
+  echo "$PACKAGE: ADD" >> $TMP/SeTnewtag
+ else
+  echo "$PACKAGE: SKP" >> $TMP/SeTnewtag
+ fi
+done
+rm -f $TMP/SeTpkgs
