@@ -1,0 +1,20 @@
+PACKAGE NAME:  mcpp-2.7.2-i586-1alien.txz
+PACKAGE LOCATION:  ./mcpp/pkg/current
+PACKAGE SIZE (compressed):  72 K
+PACKAGE SIZE (uncompressed):  200 K
+PACKAGE REQUIRED:  
+PACKAGE CONFLICTS:  
+PACKAGE SUGGESTS:  
+PACKAGE DESCRIPTION:
+mcpp: mcpp (standards-compliant C preprocessor)
+mcpp:
+mcpp: mcpp is a portable C preprosessor. It implements all of C90, C99
+mcpp: and C++98 specifications.
+mcpp: It is probably number one C/C++ preprocessor now available
+mcpp: in the world.
+mcpp:
+mcpp:
+mcpp:
+mcpp: See also: http://mcpp.sourceforge.net/
+mcpp:
+

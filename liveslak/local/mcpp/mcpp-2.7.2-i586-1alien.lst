@@ -1,0 +1,28 @@
+++========================================
+||
+||   Package:  ./mcpp/pkg/current/mcpp-2.7.2-i586-1alien.txz
+||
+++========================================
+drwxr-xr-x root/root         0 2020-12-01 12:56 ./
+drwxr-xr-x root/root         0 2020-12-01 12:56 install/
+-rw-r--r-- root/root       178 2020-12-01 12:56 install/doinst.sh
+-rw-r--r-- root/root       798 2020-12-01 12:56 install/slack-desc
+drwxr-xr-x root/root         0 2020-12-01 12:56 usr/
+drwxr-xr-x root/root         0 2020-12-01 12:56 usr/bin/
+-rwxr-xr-x root/root     13636 2020-12-01 12:56 usr/bin/mcpp
+drwxr-xr-x root/root         0 2020-12-01 12:56 usr/doc/
+drwxr-xr-x root/root         0 2020-12-01 12:56 usr/doc/mcpp-2.7.2/
+-rw-r--r-- root/root      1460 2008-01-11 15:21 usr/doc/mcpp-2.7.2/LICENSE
+-rw-r--r-- root/root      3888 2008-11-26 14:03 usr/doc/mcpp-2.7.2/NEWS
+-rw-r--r-- root/root      2242 2007-03-12 15:29 usr/doc/mcpp-2.7.2/README
+-rw-r--r-- root/root      7464 2020-12-01 12:56 usr/doc/mcpp-2.7.2/mcpp.SlackBuild
+drwxr-xr-x root/root         0 2020-12-01 12:56 usr/include/
+-rw-r--r-- root/root      1051 2020-12-01 12:56 usr/include/mcpp_lib.h
+-rw-r--r-- root/root       364 2020-12-01 12:56 usr/include/mcpp_out.h
+drwxr-xr-x root/root         0 2020-12-01 12:56 usr/lib/
+-rwxr-xr-x root/root    150668 2020-12-01 12:56 usr/lib/libmcpp.so.0.3.0
+drwxr-xr-x root/root         0 2020-12-01 12:56 usr/man/
+drwxr-xr-x root/root         0 2020-12-01 12:56 usr/man/man1/
+-rw-r--r-- root/root      1768 2020-12-01 12:56 usr/man/man1/mcpp.1.gz
+
+

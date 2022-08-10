@@ -1,0 +1,11 @@
+xdialog: xdialog (gtk-based 'dialog' replacement)
+xdialog:
+xdialog: Xdialog is designed to be a drop in replacement for the "dialog"
+xdialog: or "cdialog" programs. It converts any terminal based program into
+xdialog: a program with an X-windows interface. The dialogs are easier to
+xdialog: see and use while adding even more functionalities (e.g. with the
+xdialog: treeview, the file selector, the edit box, the range box, the help
+xdialog: button/box). Because Xdialog uses GTK+, it will also match your
+xdialog: desktop theme.
+xdialog:
+xdialog: xdialog home: http://xdialog.free.fr/

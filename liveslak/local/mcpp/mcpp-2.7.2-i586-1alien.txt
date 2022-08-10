@@ -1,0 +1,11 @@
+mcpp: mcpp (standards-compliant C preprocessor)
+mcpp:
+mcpp: mcpp is a portable C preprosessor. It implements all of C90, C99
+mcpp: and C++98 specifications.
+mcpp: It is probably number one C/C++ preprocessor now available
+mcpp: in the world.
+mcpp:
+mcpp:
+mcpp:
+mcpp: See also: http://mcpp.sourceforge.net/
+mcpp:
